@@ -20,6 +20,7 @@ Chunk 1: NPS Banner (requires scss file to render properly)
 3: Placing the header image on the screen
 4: Title text
 5: Password input. If removed, ensure that any "if password == "correct password {}" statements are also removed. Alternatively, leave them in the code, and remove the input, instead defining password as a variable within the code ("ie let password = glkn2023"). 
+ EDIT 19 Jan 2024: PASSWORD WAS REMOVED using latter method. Password can easily be reinstated. 
 6: Get WQP Data using R. 
 7: Import Plotly library. If graphs stop working one day, this link may need to be updated. 
 8: Filter data based on user inputs. 
@@ -92,7 +93,8 @@ var imgs = document.getElementsByClassName('myClass1');
 
 ```{ojs}
 correct_password = "glkn2023"
-viewof password = Inputs.text({label: " password"})
+password = "glkn2023"
+//viewof password = Inputs.text({label: " password"})
 ```
 
 ```{r echo = FALSE, message = FALSE, include = FALSE}
