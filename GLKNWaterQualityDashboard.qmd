@@ -10,9 +10,10 @@ echo: false
 ---
 <!--
 GLKN WATER QUALITY VISUALIZER
-Last updated by Hallie Arno, SIP Intern GLKN
-Updated 5 October 2023
-Contact: arno.hallie@gmail.com
+Developed by Hallie Arno, GLKN Scientists In Parks Ecology Assistant, 2023
+Last updated by Richard Damstra, GLKN Aquatic Ecologist
+Updated 20 December 2024
+Contact: arno.hallie@gmail.com or richard_damstra@nps.gov
 
 CONTENTS
 Chunk 1: NPS Banner (requires scss file to render properly)
@@ -21,7 +22,9 @@ Chunk 1: NPS Banner (requires scss file to render properly)
 4: Title text
 5: Password input. If removed, ensure that any "if password == "correct password {}" statements are also removed. Alternatively, leave them in the code, and remove the input, instead defining password as a variable within the code ("ie let password = glkn2023"). 
  EDIT 19 Jan 2024: PASSWORD WAS REMOVED using latter method. Password can easily be reinstated. 
-6: Get WQP Data using R. 
+6: Get WQP Data using R.
+ EDIT 20 Dec 2024: "StationName" was changed to "MonitoringLocationIdentifier" in WQP by Environmental Protection Agency. Code changed to reflect this. (Damstra, NPS)
+ EDIT 20 Dec 2024: Filename "GLKNStations.csv" was changed to "station.csv" to reflect name of .csv file containg site metadata in GitHub repository. 
 7: Import Plotly library. If graphs stop working one day, this link may need to be updated. 
 8: Filter data based on user inputs. 
 9: Plot color scheme input. 
@@ -107,7 +110,7 @@ library(dataRetrieval)
 library(tidyverse)
 
 #Filepaths for site names and site metadata
-locations <- read.csv("GLKNStations.csv") %>% # Site names and info for all parks 
+locations <- read.csv("station.csv") %>% # Site names and info for all parks 
  mutate(GLKNStationID = str_extract(MonitoringLocationIdentifier,"[^\\-]+$"))
 
 #Extract sites from lake parks spreadsheet
@@ -161,7 +164,7 @@ glknwqp <- dt %>% select(c("ActivityIdentifier",
 
 
 # Add lat long
-locations <- locations %>% select(GLKNStationID, LatitudeMeasure, LongitudeMeasure, StationName, Park)
+locations <- locations %>% select(GLKNStationID, LatitudeMeasure, LongitudeMeasure, MonitoringLocationIdentifier, Park)
 
 colnames(locations) <- c("glknid", "Latitude", "Longitude", "Name", "Park")
 
