@@ -1,0 +1,336 @@
+{
+  "name": "GLKN",
+  "children": [
+    {
+      "name": "APIS",
+      "children": [
+        {
+          "name": "Michigan Island Lagoon"
+        },
+        {
+          "name": "Outer Island Lagoon"
+        },
+        {
+          "name": "Stockton Island, Julian Bay Lagoon"
+        },
+        {
+          "name": "Little Sand Bay Lagoon"
+        }
+      ]
+    },
+
+        {
+      "name": "MISS",
+      "children": [
+        {
+          "name": "Mississippi R. @ Conley Lk."
+        },
+        {
+          "name": "Mississippi R. @ Spring Lk."
+        },
+        {
+          "name": "Mississippi R. @ East River Flats"
+        },
+        {
+          "name": "Mississippi R. @ St. Paul Water Works"
+        },
+        {
+          "name": "Mississippi R. @ Coon Rapids Dam"
+        },
+        {
+          "name": "Mississippi R. @ Crow River Confluence"
+        }
+      ]
+    },
+
+    {
+      "name": "SACN",
+      "children": [
+        {
+          "name": "Apple R."
+        },
+        {
+          "name": "Clam R. (Clam Flowage)"
+        },
+                {
+          "name": "St. Croix R. @ Indianhead Flowage"
+        },
+        {
+          "name": "Kinnickinnic R."
+        },
+        {
+          "name": "Namekagon R. @ Earl"
+        },
+        {
+          "name": "Namekagon R. @ Namekagon Trail"
+        },
+        {
+          "name": "Namekagon R. @ Phipps Landing"
+        },
+        {
+          "name": "Namkageon River at Leonards"
+        },
+        {
+          "name": "Pacwawong Spring Pond"
+        },
+        {
+          "name": "Phipps Spring Pond"
+        },
+        {
+          "name": "Snake R."
+        },
+        {
+          "name": "St. Croix R. @Norway Point"
+        },
+        {
+          "name": "St. Croix R. @ Prescott"
+        },
+        {
+          "name": "St. Croix R. @ Bayport"
+        },
+        {
+          "name": "St. Croix R. @ Osceola"
+        },
+        {
+          "name": "St. Croix R. @ Nevers Dam"
+        },
+        {
+          "name": "St. Croix R. @ CCC Bridge"
+        },
+        {
+          "name": "St. Croix R. @ Hwy 70"
+        },
+        {
+          "name": "St. Croix R. @ Hudson"
+        },
+        {
+          "name": "Willow R. (Lk. Mallalieu)"
+        }
+      ]
+    },
+
+      {
+  "name": "VOYA",
+  "children": [
+    {
+      "name": "Locator Lake"
+    },
+    {
+      "name": "War Club Lake"
+    },
+    {
+      "name": "Quill Lake"
+    },
+    {
+      "name": "Loiten Lake"
+    },
+    {
+      "name": "Shoepack Lake"
+    },
+    {
+      "name": "Little Shoepack Lake"
+    },
+    {
+      "name": "Jorgens Lake"
+    },
+    {
+      "name": "Quarter Line Lake"
+    },
+    {
+      "name": "Ek Lake"
+    },
+    {
+      "name": "Agnes Lake"
+    },
+    {
+      "name": "Oslo Lake"
+    },
+    {
+      "name": "Brown Lake"
+    },
+    {
+      "name": "Fishmouth Lake"
+    },
+    {
+      "name": "Peary Lake"
+    },
+    {
+      "name": "Beast Lake"
+    },
+    {
+      "name": "Cruiser Lake"
+    },
+    {
+      "name": "Ryan Lake"
+    },
+    {
+      "name": "Net Lake"
+    },
+    {
+      "name": "Tooth Lake"
+    },
+    {
+      "name": "O'Leary Lake"
+    },
+    {
+      "name": "Little Trout Lake"
+    },
+    {
+      "name": "Mukooda Lake"
+    },
+    {
+      "name": "Lucille Lake"
+    },
+    {
+      "name": "McDivitt Lake"
+    },
+    {
+      "name": "Weir Lake"
+    }
+  ]
+},
+
+     {
+      "name": "INDU",
+      "children": [
+        {
+          "name": "Long Lake"
+        },
+        {
+          "name": "Lake George"
+        },
+        {
+          "name": "Little Calumet River (East Arm)"
+        },
+        {
+          "name": "Middle Lagoon"
+        }
+      ]
+    },
+
+    {
+      "name": "ISRO",
+      "children": [
+        {
+          "name": "Lake Ahmik"
+        },
+        {
+          "name": "Sargent Lake"
+        },
+        {
+          "name": "Lake Richie"
+        },
+        {
+          "name": "Beaver Lake"
+        },
+        {
+          "name": "Lake Harvey"
+        },
+        {
+          "name": "Lake George"
+        },
+        {
+          "name": "Siskiwit Lake"
+        },
+        {
+          "name": "Lake Desor"
+        },
+        {
+          "name": "Feldtmann Lake"
+        },
+        {
+          "name": "Wallace Lake"
+        },
+        {
+          "name": "Epidote Lake"
+        },
+        {
+          "name": "Lake Whittlesey"
+        },
+        {
+          "name": "Wood Lake"
+        },
+        {
+          "name": "Intermediate Lake"
+        },
+        {
+          "name": "Lake LeSage"
+        },
+        {
+          "name": "Chickenbone Lake"
+        },
+        {
+          "name": "Amygdaloid Lake"
+        },
+        {
+          "name": "Hidden Lake"
+        }
+      ]
+    },
+    {
+      "name": "PIRO",
+      "children": [
+        {
+          "name": "Grand Sable Lake"
+        },
+        {
+          "name": "Trapper's Lake"
+        },
+        {
+          "name": "Legion Lake"
+        },
+        {
+          "name": "Beaver Lake"
+        },
+        {
+          "name": "Little Beaver Lake"
+        },
+        {
+          "name": "Chapel Lake"
+        },
+        {
+          "name": "Little Chapel Lake"
+        },
+        {
+          "name": "Miners Lake"
+        }
+      ]
+    },
+
+    {
+      "name": "SLBE",
+      "children": [
+        {
+          "name": "Manitou Lake"
+        },
+        {
+          "name": "Florence Lake"
+        },
+        {
+          "name": "Narada Lake"
+        },
+        {
+          "name": "Shell Lake"
+        },
+        {
+          "name": "Bass Lake"
+        },
+        {
+          "name": "Otter Lake"
+        },
+        {
+          "name": "Tucker Lake"
+        },
+        {
+          "name": "North Bar"
+        },
+        {
+          "name": "Loon Lake"
+        },
+        {
+          "name": "Round Lake"
+        }
+      ]
+    }
+  ]
+}
