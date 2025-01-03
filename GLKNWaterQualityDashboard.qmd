@@ -23,8 +23,9 @@ Chunk 1: NPS Banner (requires scss file to render properly)
 5: Password input. If removed, ensure that any "if password == "correct password {}" statements are also removed. Alternatively, leave them in the code, and remove the input, instead defining password as a variable within the code ("ie let password = glkn2023"). 
  EDIT 19 Jan 2024: PASSWORD WAS REMOVED using latter method. Password can easily be reinstated. 
 6: Get WQP Data using R.
- EDIT 20 Dec 2024: "StationName" was changed to "MonitoringLocationIdentifier" in WQP by Environmental Protection Agency. Code changed to reflect this. (Damstra, NPS)
- EDIT 20 Dec 2024: Filename "GLKNStations.csv" was changed to "station.csv" to reflect name of .csv file containg site metadata in GitHub repository. 
+ EDIT 20 Dec 2024: Filename "GLKNStations.csv" was changed to "station.csv" to reflect name of .csv file containing site metadata in GitHub repository. 
+ EDIT 03 Jan 2025: "StationName" was reinstated to code. Mistakenly removed in WQP by Environmental Protection Agency, wrong version of station.csv was saved in repository previously that was missing some stations and had needed the StationName column to display SACN sites on visualizer properly. Code changed to reflect this. (Damstra, NPS)
+ EDIT 03 Jan 2025: Changed code to remove "Park.x" column and renamed the "Park.y" column as "Park, to remove redundancy
 7: Import Plotly library. If graphs stop working one day, this link may need to be updated. 
 8: Filter data based on user inputs. 
 9: Plot color scheme input. 
@@ -43,7 +44,7 @@ Tabset Panels:
 50-52: Table and download button for data
 53: Inputs for profile plots
 54-57: Calling profile plots for each relevant variable
-58: Informtation tab
+58: Information tab
 -->
 
 <!--head-->
@@ -164,7 +165,7 @@ glknwqp <- dt %>% select(c("ActivityIdentifier",
 
 
 # Add lat long
-locations <- locations %>% select(GLKNStationID, LatitudeMeasure, LongitudeMeasure, MonitoringLocationIdentifier, Park)
+locations <- locations %>% select(GLKNStationID, LatitudeMeasure, LongitudeMeasure, StationName, Park)
 
 colnames(locations) <- c("glknid", "Latitude", "Longitude", "Name", "Park")
 
@@ -177,13 +178,15 @@ df <- df %>%
     mutate(Hour = hour(DateTime)) %>% 
     mutate(Minute = minute(DateTime)) %>% 
     mutate(Time = paste0(Hour, ":", Minute, " (UTC)")) %>% 
-    select(-c(Hour, Minute, DateTime, MonitoringLocationIdentifier, Activity_ID)) %>%  
+    select(-c(Hour, Minute, DateTime, MonitoringLocationIdentifier, Activity_ID, Park.x)) %>%  
     mutate(Date = as.character(Date)) %>% 
     mutate(Year = year(Date)) %>% 
-    mutate(Month = month(Date)) 
+    mutate(Month = month(Date))
+
+df <- df %>% rename_at('Park.y', ~'Park')
 
  df <- df[order(-df$Depth), ] #this is for profile plots. It *seems* to not be impacting other plots. I really don't want to try to do this in js. 
-
+#Define output for JavaScript
 ojs_define(data = transpose(df))
 ojs_define(station = transpose(locations))
 ```
