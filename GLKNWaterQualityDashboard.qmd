@@ -25,7 +25,7 @@ Chunk 1: NPS Banner (requires scss file to render properly)
 6: Get WQP Data using R.
  EDIT 20 Dec 2024: Filename "GLKNStations.csv" was changed to "station.csv" to reflect name of .csv file containing site metadata in GitHub repository. 
  EDIT 03 Jan 2025: "StationName" was reinstated to code. Mistakenly removed in WQP by Environmental Protection Agency, wrong version of station.csv was saved in repository previously that was missing some stations and had needed the StationName column to display SACN sites on visualizer properly. Code changed to reflect this. (Damstra, NPS)
- EDIT 03 Jan 2025: Changed code to remove "Park.x" column and renamed the "Park.y" column as "Park, to remove redundancy
+ EDIT 03 Jan 2025: Changed code to remove "Park.x" column and renamed the "Park.y" column created in join as "Park", to remove redundancy
 7: Import Plotly library. If graphs stop working one day, this link may need to be updated. 
 8: Filter data based on user inputs. 
 9: Plot color scheme input. 
